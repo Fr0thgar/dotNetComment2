@@ -20,7 +20,6 @@ namespace dotNetComment
         public static void Main(string[] args)
         {
 
-
             var host = CreateWebHostBuilder(args).Build();
 
             try
@@ -49,7 +48,7 @@ namespace dotNetComment
                         UserName = "admin",
                         Email = "admin@test.com"
                     };
-                    userManager.CreateAsync(adminUser, "password").GetAwaiter().GetResult();
+                    var result = userManager.CreateAsync(adminUser, "password").GetAwaiter().GetResult();
                     //add Role to user
                     userManager.AddToRoleAsync(adminUser, adminRole.Name).GetAwaiter().GetResult();
                 }
