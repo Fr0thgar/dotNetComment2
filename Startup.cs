@@ -16,7 +16,7 @@ using Microsoft.EntityFrameworkCore.Sqlite;
 using Microsoft.AspNetCore.Identity.UI;
 
 
-namespace dotNetComment
+namespace Blog
 {
     public class Startup
     {
