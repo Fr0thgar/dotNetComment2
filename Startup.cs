@@ -56,10 +56,12 @@ namespace dotNetComment
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+
                 
             }
 
             app.UseAuthentication();
+            app.UseAuthorization();
 
             app.UseMvcWithDefaultRoute();
 
