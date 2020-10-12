@@ -26,7 +26,7 @@ namespace Blog.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(LoginViewModel vm)
         {
-           var result = _signInManager.PasswordSignInAsync(vm.UserName, vm.Password, false, false);
+           var result = await _signInManager.PasswordSignInAsync(vm.UserName, vm.Password, false, false);
            return RedirectToAction("Index", "Panel");
         }
 

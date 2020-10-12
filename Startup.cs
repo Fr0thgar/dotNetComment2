@@ -28,6 +28,8 @@ namespace Blog
        
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMvc(options => options.EnableEndpointRouting = false);
+
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(_config["DefaultConnection"]));
 
             services.AddIdentity<IdentityUser, IdentityRole>(options =>
@@ -47,17 +49,15 @@ namespace Blog
 
             services.AddTransient<IRepository, Repository>();
 
-            services.AddMvc(options => options.EnableEndpointRouting = false);
+            
             
         }
 
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-
-                
             }
 
             app.UseAuthentication();

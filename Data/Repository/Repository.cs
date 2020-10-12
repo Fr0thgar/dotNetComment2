@@ -14,10 +14,9 @@ namespace Blog.Data.Repository
         {
             _ctx = ctx;
         }
-
-        public Post GetPost(int id)
+        public void AddPost(Post post)
         {
-            return _ctx.Posts.FirstOrDefault(p => p.Id == id);
+            _ctx.Posts.Add(post);
         }
 
         public List<Post> GetAllPosts()
@@ -25,20 +24,19 @@ namespace Blog.Data.Repository
             return _ctx.Posts.ToList();
         }
 
-        public void AddPost(Post post)
+        public Post GetPost(int id)
         {
-            _ctx.Posts.Add(post);
-           
+            return _ctx.Posts.FirstOrDefault(p => p.Id == id);
+        }
+        
+        public void RemovePost(int id)
+        {
+            _ctx.Posts.Remove(GetPost(id));
         }
 
         public void UpdatePost(Post post)
         {
             _ctx.Posts.Update(post);
-        }
-
-        public void RemovePost(int id)
-        {
-            _ctx.Posts.Remove(GetPost(id));
         }
 
         public async Task<bool> SaveChangesAsync()
