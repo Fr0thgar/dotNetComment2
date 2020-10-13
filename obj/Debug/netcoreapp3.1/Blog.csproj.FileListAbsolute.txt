@@ -109,3 +109,5 @@ C:\Users\orcel\Desktop\Code\C#\dotNetComment\obj\Debug\netcoreapp3.1\Blog.MvcApp
 C:\Users\orcel\Desktop\Code\C#\dotNetComment\obj\Debug\netcoreapp3.1\Razor\Views\Auth\Login.cshtml.g.cs
 C:\Users\orcel\Desktop\Code\C#\dotNetComment\obj\Debug\netcoreapp3.1\Razor\Views\Panel\Index.cshtml.g.cs
 C:\Users\orcel\Desktop\Code\C#\dotNetComment\obj\Debug\netcoreapp3.1\Razor\Views\Panel\Edit.cshtml.g.cs
+C:\Users\orcel\Desktop\Code\C#\dotNetComment\bin\Debug\netcoreapp3.1\appsettings.production.Development.json
+C:\Users\orcel\Desktop\Code\C#\dotNetComment\bin\Debug\netcoreapp3.1\appsettings.production.json

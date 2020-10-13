@@ -109,3 +109,5 @@ C:\Users\orcel\Desktop\Code\C#\dotNetComment\obj\Release\netcoreapp3.1\staticweb
 C:\Users\orcel\Desktop\Code\C#\dotNetComment\obj\Release\netcoreapp3.1\Blog.dll
 C:\Users\orcel\Desktop\Code\C#\dotNetComment\obj\Release\netcoreapp3.1\Blog.pdb
 C:\Users\orcel\Desktop\Code\C#\dotNetComment\obj\Release\netcoreapp3.1\Blog.genruntimeconfig.cache
+C:\Users\orcel\Desktop\Code\C#\dotNetComment\bin\Release\netcoreapp3.1\appsettings.production.Development.json
+C:\Users\orcel\Desktop\Code\C#\dotNetComment\bin\Release\netcoreapp3.1\appsettings.production.json
