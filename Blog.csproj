@@ -15,10 +15,13 @@
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.8" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.8" />
+    <PackageReference Include="PhotoSauce.MagicScaler" Version="0.11.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\content\blog\" />
+    <Content Update="wwwroot/content/blog/*.*" CopyToPublishDirectory="Never" />
+    <Content Update="wwwroot/lib/**/*.*" CopyToPublishDirectory="Never" />
+    <Content Update="wwwroot/lib/**/dist/**/*.*" CopyToPublishDirectory="Always" />
   </ItemGroup>
 
   <ItemGroup>

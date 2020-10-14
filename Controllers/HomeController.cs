@@ -21,59 +21,32 @@ namespace Blog.Controllers
             _fileManager = fileManager;
         }
 
-        public IActionResult Index(string category)
-        {
-           
-            var posts = string.IsNullOrEmpty(category) ? _repo.GetAllPosts() : _repo.GetAllPosts(category);
-            return View(posts);
-        }
+        public IActionResult Index(string category) => View(string.IsNullOrEmpty(category) ? _repo.GetAllPosts() : _repo.GetAllPosts(category));
 
-        public IActionResult Post(int id)
-        {
-            var post = _repo.GetPost(id);
-            return View(post);
-        }
+        public IActionResult Post(int id) => View(_repo.GetPost(id));
 
         [HttpGet("/Image/{image}")]
-        public IActionResult Image(string image)
-        {
-            var mime = image.Substring(image.LastIndexOf('.') + 1);
-            return new FileStreamResult(_fileManager.ImageStream(image), $"image/{mime}");
-        }
-        
-        // [HttpGet]
-        // public IActionResult Edit(int? id)
+        public IActionResult Image(string image) => new FileStreamResult(_fileManager.ImageStream(image), $"image/{image.Substring(image.LastIndexOf('.') + 1)}");
+
+        // Old Code that works
+        // public IActionResult Index(string category)
         // {
-        //     if (id == null)
-        //         return View(new Post());
-        //     else
-        //     {
-        //         var post = _repo.GetPost((int)id);
-        //         return View(post);
-        //     }
         //
+        //     var posts = string.IsNullOrEmpty(category) ? _repo.GetAllPosts() : _repo.GetAllPosts(category);
+        //     return View(posts);
         // }
-        //
-        // [HttpPost]
-        // public async Task<IActionResult> Edit(Post post)
+
+        // public IActionResult Post(int id)
         // {
-        //     if (post.Id > 0)
-        //         _repo.UpdatePost(post);
-        //     else
-        //         _repo.AddPost(post);
-        //
-        //     if (await _repo.SaveChangesAsync())
-        //         return RedirectToAction("Index");
-        //     else
-        //         return View(post);
+        //     var post = _repo.GetPost(id);
+        //     return View(post);
         // }
-        //
-        // [HttpGet]
-        // public async Task<IActionResult> Remove(int id)
+
+        // [HttpGet("/Image/{image}")]
+        // public IActionResult Image(string image)
         // {
-        //     _repo.RemovePost(id);
-        //     await _repo.SaveChangesAsync();
-        //     return RedirectToAction("Index");
+        //     var mime = image.Substring(image.LastIndexOf('.') + 1);
+        //     return new FileStreamResult(_fileManager.ImageStream(image), $"image/{mime}");
         // }
     }
 }
