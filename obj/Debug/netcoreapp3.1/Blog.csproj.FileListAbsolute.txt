@@ -113,3 +113,4 @@ C:\Users\orcel\Desktop\Code\C#\dotNetComment\obj\Debug\netcoreapp3.1\Blog.csproj
 C:\Users\orcel\Desktop\Code\C#\dotNetComment\obj\Debug\netcoreapp3.1\Blog.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\orcel\Desktop\Code\C#\dotNetComment\obj\Debug\netcoreapp3.1\Blog.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\orcel\Desktop\Code\C#\dotNetComment\bin\Debug\netcoreapp3.1\bundleconfig.json
+C:\Users\orcel\Desktop\Code\C#\dotNetComment\obj\Debug\netcoreapp3.1\Razor\Views\Home\_MainComment.cshtml.g.cs

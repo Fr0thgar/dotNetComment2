@@ -21,13 +21,20 @@ using Blog.Models;
 #nullable disable
 #nullable restore
 #line 2 "C:\Users\orcel\Desktop\Code\C#\dotNetComment\Views\_ViewImports.cshtml"
+using Blog.Models.Comments;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "C:\Users\orcel\Desktop\Code\C#\dotNetComment\Views\_ViewImports.cshtml"
 using Blog.ViewModels;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d6c85d683453b90af6f48f8b32ea4fe9bbc82d0b", @"/Views/Panel/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9c1dd89ee945937e85fe2e65d1d46d865d868a6a", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"589cc89b1f87f47cabbc31f53b279948e21071bd", @"/Views/_ViewImports.cshtml")]
     public class Views_Panel_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<Post>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-controller", "Panel", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -58,7 +65,7 @@ using Blog.ViewModels;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("\r\n\r\n<h2>Admin Panel</h2>\r\n\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d6c85d683453b90af6f48f8b32ea4fe9bbc82d0b3984", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d6c85d683453b90af6f48f8b32ea4fe9bbc82d0b4164", async() => {
                 WriteLiteral("\r\n    Add New Post\r\n");
             }
             );
@@ -93,7 +100,7 @@ using Blog.ViewModels;
 #line hidden
 #nullable disable
             WriteLiteral("\r\n                -\r\n                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d6c85d683453b90af6f48f8b32ea4fe9bbc82d0b5909", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d6c85d683453b90af6f48f8b32ea4fe9bbc82d0b6089", async() => {
                 WriteLiteral("\r\n                    Edit\r\n                ");
             }
             );
@@ -126,7 +133,7 @@ using Blog.ViewModels;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d6c85d683453b90af6f48f8b32ea4fe9bbc82d0b8335", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d6c85d683453b90af6f48f8b32ea4fe9bbc82d0b8515", async() => {
                 WriteLiteral("\r\n                    Remove\r\n                ");
             }
             );

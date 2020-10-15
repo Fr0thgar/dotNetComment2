@@ -65,7 +65,7 @@ nav a {
     }
 
     .post-body {
-        margin: -5px 5px 0;
+        margin: 5px 5px 0;
         padding: 20px 5px;
         background: white;
         border-bottom-left-radius: 5px;
@@ -75,3 +75,7 @@ nav a {
     .no-shadow {
     box-shadow: none;
     }
+
+.comment-section {
+    background-color: #d0e2bc
+}
