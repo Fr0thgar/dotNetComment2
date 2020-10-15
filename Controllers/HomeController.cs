@@ -26,6 +26,7 @@ namespace Blog.Controllers
         public IActionResult Post(int id) => View(_repo.GetPost(id));
 
         [HttpGet("/Image/{image}")]
+        [ResponseCache(CacheProfileName = "Monthly")]
         public IActionResult Image(string image) => new FileStreamResult(_fileManager.ImageStream(image), $"image/{image.Substring(image.LastIndexOf('.') + 1)}");
 
         // Old Code that works
